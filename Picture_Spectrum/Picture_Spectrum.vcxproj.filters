@@ -18,18 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GUI.cpp">
+    <ClCompile Include="Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
+    <ClCompile Include="ImageUploader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GUI.h">
+    <ClInclude Include="Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
+    <ClInclude Include="ImageUploader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -43,6 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="buttons.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="sunset.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="water.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Eclipse.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

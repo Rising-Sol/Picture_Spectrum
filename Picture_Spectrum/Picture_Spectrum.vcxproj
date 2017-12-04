@@ -147,12 +147,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
-    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="ImageUploader.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
-    <ClInclude Include="GUI.h" />
+    <ClInclude Include="ImageUploader.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="steelfish-rg.ttf" />
@@ -160,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="buttons.png" />
+    <Image Include="Eclipse.jpg" />
+    <Image Include="sunset.jpg" />
+    <Image Include="water.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,6 @@
 #include <string>
-#include "GUI.h"
 #include "Button.h"
+#include "ImageUploader.h"
 
 
 int main()
@@ -77,33 +77,30 @@ int main()
 			//user clicks on a button
 			switch (event.type) {
 			case sf::Event::MouseButtonPressed:
+				//changes button to its clicked appearance
 				if (BtnSelectImage.isClicked(sf::Mouse::getPosition(mainWindow)) == true)
-				{
-					//BtnSelectImage.renderBtn(mainWindow);
-					//mainWindow.display();
-				}
-				if (BtnExit.isClicked(sf::Mouse::getPosition(mainWindow)) == true)
-				{
-					//BtnExit.renderBtn(mainWindow);
-					//mainWindow.display();
-				}
+				{}
+				else if (BtnExit.isClicked(sf::Mouse::getPosition(mainWindow)) == true)
+				{}
 				break;
 
 			//reverts button to normal state either way. Only does enclosed code if true
 			case sf::Event::MouseButtonReleased:
 				if (BtnSelectImage.clickRelease(sf::Mouse::getPosition(mainWindow)) == true)
 				{
-					//BtnSelectImage.renderBtn(mainWindow);
-					//mainWindow.display();
-					//Allows the user to select an image to be modified
+					BtnSelectImage.renderBtn(mainWindow);
+					mainWindow.display();
+					ImageUploader uploadWindow;
+					uploadWindow.UploadHub(mainWindow);
+					
 				}
-				if (BtnExit.clickRelease(sf::Mouse::getPosition(mainWindow)) == true)
+				else if (BtnExit.clickRelease(sf::Mouse::getPosition(mainWindow)) == true)
 				{
 					BtnExit.renderBtn(mainWindow);
 					mainWindow.display();
 					mainWindow.close();
 				}
-
+				break;
 			}//endswitch
 			
 		}//endpoll
