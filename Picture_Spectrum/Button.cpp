@@ -37,10 +37,10 @@ bool Button::isClicked(sf::Vector2i mousePosition)
 {
 	bool truthiness = false;
 	if (mousePosition.x >= SPnormal.getPosition().x &&
-		mousePosition.x <= SPnormal.getPosition().x + 250)
+		mousePosition.x <= SPnormal.getPosition().x + 256)
 	{
 		if (mousePosition.y >= SPnormal.getPosition().y &&
-			mousePosition.y <= SPnormal.getPosition().y + 150)
+			mousePosition.y <= SPnormal.getPosition().y + 64)
 		{
 			CurState = &SPclicked;
 			truthiness = true;
@@ -65,10 +65,10 @@ bool Button::clickRelease(sf::Vector2i mousePosition)
 {
 	bool truthiness = false;
 	if (mousePosition.x >= SPnormal.getPosition().x &&
-		mousePosition.x <= SPnormal.getPosition().x + 250)
+		mousePosition.x <= SPnormal.getPosition().x + 256)
 	{
 		if (mousePosition.y >= SPnormal.getPosition().y &&
-			mousePosition.y <= SPnormal.getPosition().y + 150)
+			mousePosition.y <= SPnormal.getPosition().y + 64)
 		{
 			CurState = &SPnormal;
 			truthiness = true;

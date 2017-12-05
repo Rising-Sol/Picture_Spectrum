@@ -36,7 +36,7 @@ int main()
 	WndTexture.setSmooth(true);
 	background.setTexture(WndTexture);
 	background.setTextureRect(sf::IntRect(0, 0, WndTexture.getSize().x, WndTexture.getSize().y / 2));
-	background.setColor(sf::Color(0,0,0));
+	background.setColor(sf::Color(100,100,100));
 	background.setScale(scaleX, scaleY);
 
 	//Homepage text
@@ -104,10 +104,11 @@ int main()
 			}//endswitch
 			
 		}//endpoll
-		BtnSelectImage.renderBtn(mainWindow);
-		BtnExit.renderBtn(mainWindow);
+		mainWindow.clear();
 		mainWindow.draw(background);
 		mainWindow.draw(HomePage);
+		BtnSelectImage.renderBtn(mainWindow);
+		BtnExit.renderBtn(mainWindow);
 		mainWindow.display();
 	}
 

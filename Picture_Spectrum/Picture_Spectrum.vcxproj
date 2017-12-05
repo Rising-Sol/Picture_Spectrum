@@ -161,6 +161,7 @@
   <ItemGroup>
     <Image Include="buttons.png" />
     <Image Include="Eclipse.jpg" />
+    <Image Include="flowers.jpg" />
     <Image Include="sunset.jpg" />
     <Image Include="water.jpg" />
   </ItemGroup>

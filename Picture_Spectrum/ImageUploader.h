@@ -18,8 +18,8 @@ public:
 	~ImageUploader();
 
 	void UploadHub(sf::RenderWindow &window);
-
-
-private:
-
+	void RadixSpectrum(int picChoice);
+	sf::Color *sortBrightness(sf::Color *pixelArr, int numElements);
+	sf::Color *sortColor(sf::Color *pixelArr, int sizeX, int sizeY);
+	sf::Color *RadixLine(sf::Color *arr, int *primaryColor, int *secondaryColor, int numElements);
 };
