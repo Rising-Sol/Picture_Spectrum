@@ -1,1 +1,12 @@
-﻿  Picture_Spectrum.vcxproj -> C:\Users\Kaine\Documents\Visual Studio 2015\Projects\CPTS_122\Picture_Spectrum\Debug\Picture_Spectrum.exe
+﻿  Main.cpp
+c:\users\kaine\documents\visual studio 2015\projects\cpts_122\picture_spectrum\picture_spectrum\main.cpp(74): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  ImageUploader.cpp
+c:\users\kaine\documents\visual studio 2015\projects\cpts_122\picture_spectrum\picture_spectrum\imageuploader.cpp(76): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\kaine\documents\visual studio 2015\projects\cpts_122\picture_spectrum\picture_spectrum\imageuploader.cpp(182): warning C4018: '<': signed/unsigned mismatch
+c:\users\kaine\documents\visual studio 2015\projects\cpts_122\picture_spectrum\picture_spectrum\imageuploader.cpp(184): warning C4018: '<': signed/unsigned mismatch
+c:\users\kaine\documents\visual studio 2015\projects\cpts_122\picture_spectrum\picture_spectrum\imageuploader.cpp(207): warning C4018: '<': signed/unsigned mismatch
+  Button.cpp
+  Generating Code...
+  Picture_Spectrum.vcxproj -> C:\Users\Kaine\Documents\Visual Studio 2015\Projects\CPTS_122\Picture_Spectrum\Debug\Picture_Spectrum.exe

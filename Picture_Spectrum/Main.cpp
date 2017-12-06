@@ -1,3 +1,22 @@
+/*
+	File:Main.cpp
+	Author: Kaine Schultz
+
+	Description: This program allows the user to select an image and
+	create a color spectrum of that image's pixels. The main function 
+	contains the main page, where the user can choose to select an image
+	or exit the program. When the user is finished with the photo spectrum, 
+	the program will return to this main page.
+
+
+
+	Code written by Mohammed is commented as such, all other code is written
+	by Kaine schultz.
+
+*/
+
+
+
 #include <string>
 #include "Button.h"
 #include "ImageUploader.h"
@@ -6,7 +25,7 @@
 int main()
 {
 
-	sf::RenderWindow mainWindow(sf::VideoMode(1024, 768), "Picture Spectrum", sf::Style::Default);
+	sf::RenderWindow mainWindow(sf::VideoMode(1024, 768), "Photo Spectrum", sf::Style::Default);
 	sf::Texture BtnTexture;
 	sf::Texture WndTexture;
 	sf::Sprite background;
@@ -43,7 +62,7 @@ int main()
 	HomePage.setFont(font);
 	HomePage.setCharacterSize(35);
 	string homeText;
-	homeText = "\t\t\t\t\t\t\t\t\t\tWelcome to the Picture Spectrum application!\n\nThis program lets";
+	homeText = "\t\t\t\t\t\t\t\t\t\tWelcome to the Photo Spectrum application!\n\nThis program lets";
 	homeText.append(" you upload a picture, and transform it into a");
 	homeText.append(" color spectrum of its pixels.\n");
 	homeText.append("\t\t\t\t\t\t\t\t\t\t\t\t\tClick a button below to begin.");

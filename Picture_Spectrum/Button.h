@@ -1,4 +1,12 @@
 /*
+	File: Button.h
+	Author:Kaine Schultz
+
+	Description: this function creates a button with two states(normal/clicked)
+	and a label, and places it at some location
+	Input: A texture for the button,
+			text, for what the button says,
+			and a position to place the button
 
 */
 

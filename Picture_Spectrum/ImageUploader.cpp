@@ -143,6 +143,7 @@ void ImageUploader::UploadHub(sf::RenderWindow &window)
 			BtnEclipse.renderBtn(window);
 			BtnWater.renderBtn(window);
 			BtnAccept.renderBtn(window);
+			window.draw(uploadText);
 			window.display();
 		}
 
@@ -559,3 +560,56 @@ sf::Color *ImageUploader::RadixLine(sf::Color *arr, int *primaryColor, int *seco
 
 	return outputArr;
 }
+
+
+
+
+
+
+
+
+
+
+//Mohammed's Code
+/* 
+sf::Color *ImageUploader::pixelLine(sf::Color *arr, int *HighColor, int *secondColor) {
+
+	pivot = arr[HighColor];
+
+	i = (secondColor - 1) // Index of smaller element
+
+		for (j = secondColor; j &lt; = HighColor - 1; j++)
+		{
+
+			if (arr[j] & lt; = pivot)
+			{
+				i++;
+				swap arr[i] and arr[j]
+			}
+		}
+	swap arr[i + 1] and arr[HighColor])
+	return (i + 1)
+}
+
+
+void ImageUploader::swap(int* a, int* b)
+{
+	int t = *a;
+	*a = *b;
+	*b = t;
+}
+void ImageUploader::QuickSort(sf::Color *arr, int *HighColor, int *secondColor)
+{
+	if (secondColor &lt; HighColor)
+	{
+
+		int pi = pixelLine(arr, secondColor, HighColor);
+
+
+		// Separately sort elements before
+
+		QuickSort(arr, secondColor, pi - 1);
+		QuickSort(arr, pi + 1, HighColor);
+	}
+}
+*/
